@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Read from text file</title>
+
+<script type="text/javascript">
+
+function readData(){
+
+  var element = document.getElementById("usrName");
+  
+  var value = element.value;
+  
+  
+  var msgElement = document.getElementById("msg1");
+  if(value === 'Ramesh'){
+	  msgElement.innerHTML = "<b style='color:green'>Valid User</b>";
+	  console.log("valid brah");
+  } else {
+	   msgElement.innerHTML = "<B style='color:red'>Invalid User</B>";
+	   console.log("invalid brah");
+
+  }
+
+  console.log(value);
+  
+}
+  
+</script>
+
+
+<style>
+img {
+	height:100px;
+	width: 100px;
+	border: 2px solid blue;
+}
+</style>
+
+
+
+</head>
+<body>
+
+
+
+<img alt="img" src="Images/icon.png" name="pict" 
+onmouseover="document.pict.src='images/logo.png'" 
+onmouseout="document.pict.src='images/icon.png'">
+
+
+
+
+<form>
+<label>User name</label>
+
+<input type="text" name="userName" id="usrName" onblur="readData()">
+<span id="msg1"></span>
+<input type="password" name="passWord" id="passWord">
+
+<input type="button" value="read" onclick="readData()">
+
+</form>
+
+
+
+</body>
+</html>
