@@ -1,0 +1,11 @@
+package creation.factory.domains;
+
+public enum HealthInsurance {
+    FAMILYFLOATER, CRITICALILLNESS
+}
+
+// public class HealthInsurance extends Insurance {
+//
+// private InsuranceType type;
+//
+// }

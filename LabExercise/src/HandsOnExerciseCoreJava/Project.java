@@ -9,6 +9,7 @@ public class Project implements IProject{
     private String details;
     private double projectCost = 0;
     private double totalDonationAmount= 0;
+    private int projectId;
     private ArrayList<String> photos = new ArrayList<String>();
 //    private ArrayList<Donor> donors = new ArrayList<Donor>();
     
@@ -18,14 +19,23 @@ public class Project implements IProject{
     	
     }
     
-    public Project(String name, String details, double projectCost, ArrayList<String> photos){
-    	this.name = name;
+    public Project(int projectId, String name, String details, double projectCost, ArrayList<String> photos){
+    	this.projectId = projectId;
+        this.name = name;
     	this.details = details;
     	this.projectCost = projectCost;
     	this.photos = photos;
     }
     
     
+    public int getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(int projectId) {
+        this.projectId = projectId;
+    }
+
     public String getName() {
         return name;
     }

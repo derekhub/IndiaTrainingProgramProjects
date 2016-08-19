@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function getData(){
+	req = new XMLHttpRequest();
+	userCode = document.getElementById("code").value;
+	console.log("user code: " + userCode);
+	targetField = document.getElementById("name");
+	var queryString = "http://jsonplaceholder.typicode.com/users/" + escape(userCode);
+	
+}
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

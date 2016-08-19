@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Donor Page</title>
+
+
+</head>
+<body>
+<section>
+  <form action="" onsubmit="event.preventDefault(); total.value=parseInt(donation.value) + parseInt(projectAmount.value);">
+    <table>
+ 
+	  <select name="projects">
+	    <option>Project 1</option>
+	    <option>Project 2</option>
+	    <option>Project 3</option>
+	  </select>
+
+    
+      <tr>
+        <td><label>Donor Name</label></td>
+        <td><input type="text" name="donorName" required="required" placeholder="Name as registered"></td>
+      </tr>
+
+    
+    
+      <tr>
+        <td><label>Project Amount</label></td>
+        <td><input type="text" name="projectAmount" id="projectAmount" required="required" placeholder="Project Amount"></td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td><label>Enter Donation Amount</label></td>
+        <td><input type="text" required="required" id="donation" placeholder="50-500 rupees"></td>
+      </tr>
+      
+      
+
+
+      <tr>
+        <td><input type="submit" width="50" height="50" src="images/icon.png"></td>
+        <td><input type="text" id="total"></td>
+      </tr>
+      
+
+
+
+      <tr>
+        <td>
+        </td>
+      </tr>
+      
+      
+    </table>
+  </form>
+</section>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run">
+	<target name="clean">
+		
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="build/classes"/>
+		<javac srcdir="src" destdir="build/classes"/>
+	</target>
+
+	<target name="run" depends="compile">
+		<java classname="com.training.TestGreet" fork="true">
+			<classpath>
+				<path location="build/classes"/>
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<mkdir dir= "build/jarstuff"/>
+		<jar destfile="build/jarstuff/testJar.jar" basedir="build/classes">
+			
+		<fileset dir="build/classes" />
+		<fileset dir="src" includes="**/*.java" />
+		<manifest>
+			<attribute name="Main-Class" value="build/classes/com/training/TestGreet.class"/> 
+		</manifest>
+		</jar>
+	</target>
+	
+	<target name="doc" depends="compile" description="generate documentation">
+		<javadoc sourcepath="src" destdir="doc" windowtitle="Ant application">
+			<bottom>
+				<![CDATA[Copyright 2016.-18 All Rights Reserved.]]>
+			</bottom>
+			<group title="core packages" packages="com.training.*"/>
+		</javadoc>
+		<echo message="java doc is here"/>
+	</target>
+
+		
+	
+</project> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

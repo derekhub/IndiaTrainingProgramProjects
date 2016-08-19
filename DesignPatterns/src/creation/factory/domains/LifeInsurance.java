@@ -1,0 +1,25 @@
+package creation.factory.domains;
+
+public class LifeInsurance extends Insurance {
+
+    private int policyAmount;
+
+    public int getPolicyAmount() {
+        return policyAmount;
+    }
+
+    public void setPolicyCode(String policyCode) {
+        this.policyAmount = policyAmount;
+    }
+
+    // public double calculatePremium() {
+    // double premium = 0.0;
+    //
+    // if (policyAmount == "EN") {
+    // premium = (getPolicyAmount() * 2000) / 12;
+    // } else {
+    // premium = (getPolicyAmount() * 2500) / 12;
+    // }
+    // }
+
+}

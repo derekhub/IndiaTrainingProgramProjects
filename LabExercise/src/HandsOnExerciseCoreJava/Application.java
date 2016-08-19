@@ -12,13 +12,13 @@ public class Application {
     	photos.add("photo2");
     	photos.add("photo3");
     	
-    	Donor d1 = portal.createDonor("Derek", "d@hotmail.com");
-    	Donor d2 = portal.createDonor("Andrew", "a@hotmail.com");
-    	Donor d3 = portal.createDonor("Kevin", "k@hotmail.com");
+    	Donor d1 = portal.createDonor(001, "Derek", "d@hotmail.com");
+    	Donor d2 = portal.createDonor(002, "Andrew", "a@hotmail.com");
+    	Donor d3 = portal.createDonor(003, "Kevin", "k@hotmail.com");
     	
-    	Project p1 = portal.createProject("CureIndia", "For curing India", 10000, photos);
-    	Project p2 = portal.createProject("Apples", null, 50000, photos);
-    	Project p3 = portal.createProject("Bananas", "Giving bananas to the needy", 800000, photos);
+    	Project p1 = portal.createProject(001, "CureIndia", "For curing India", 10000, photos);
+    	Project p2 = portal.createProject(002, "Apples", null, 50000, photos);
+    	Project p3 = portal.createProject(003, "Bananas", "Giving bananas to the needy", 800000, photos);
 
     	
     	//3

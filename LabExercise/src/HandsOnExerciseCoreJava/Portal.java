@@ -9,14 +9,14 @@ public class Portal {
 	private ArrayList<Donor> donors = new ArrayList<Donor>();
 
 	
-	public Donor createDonor(String name, String email){
-		Donor d = new Donor(name, email);
+	public Donor createDonor(int donorId, String name, String email){
+		Donor d = new Donor(donorId, name, email);
 		donors.add(d);
 		return d;
 	}
 	
-	public Project createProject(String name, String details, double projectCost, ArrayList<String> photos){
-		Project p = new Project(name, details, projectCost, photos);
+	public Project createProject(int projectId, String name, String details, double projectCost, ArrayList<String> photos){
+		Project p = new Project(projectId, name, details, projectCost, photos);
 		projects.add(p);
 		return p;
 		

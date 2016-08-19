@@ -1,0 +1,15 @@
+package com.training;
+
+public class testGreet{
+
+	public static void main (String[] args) {
+
+
+		Greet greet = new Greet();
+
+		greet.greet();
+
+	}
+
+
+}
