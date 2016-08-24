@@ -1,0 +1,7 @@
+1) create a java class 
+2) initialize a hashmap of integer, double
+3) add a method that takes phone number as argument and return the amount due from the hashmap
+4) create a servlet using request object read the phone number and email
+5) create an instance of the java class and invoke the method by passing phoneNumber
+6) Create a HTML response
+7) Create a HTML file with form having 2 text fields and a button
