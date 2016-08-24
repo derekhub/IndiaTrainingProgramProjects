@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Understanding jQuery Loading</title>
+
+<script type="text/javascript" src="Scripts/jquery.js"></script>
+<script type="text/javascript">
+
+window.onload = function() {
+	alert("ON Load - 1 Called");
+}
+
+// Equivalent to document.ready
+// jquery is called first, even before the window onload stuff
+$(function(){
+	
+	//alert("Document ready - 1 called ");
+	("#target").html("event handling with jqueryuerueur";)
+	
+});
+
+</script>
+
+</head>
+<body>
+
+<h1>jQuery Examples</h1>
+
+<div id="target"></div>
+
+</body>
+</html>

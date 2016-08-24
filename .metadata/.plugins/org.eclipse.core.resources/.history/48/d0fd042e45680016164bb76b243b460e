@@ -1,0 +1,99 @@
+/**
+ * 
+ */
+
+function getCredentials(){
+	
+	var userName = document.getElementsByName('userName')[0].value;
+	var passWord = document.getElementsByName('passWord')[0].value;
+	var credentials = userName + passWord;
+		
+	document.getElementsByName('output')[0].value = credentials;
+}
+
+
+function getSkills(){
+		
+	var skills = "";
+	var skills2 = "";
+	
+	if(document.getElementById('skillsJava').checked) {
+		skills = document.getElementById('skillsJava').value;
+	}
+	
+	if(document.getElementById('skillsDotNet').checked) {
+		skills2 = document.getElementById('skillsDotNet').value;
+	}
+
+	var skills3 = skills + skills2;
+		
+	document.getElementsByName('output')[0].value = skills3;
+}
+
+
+function getCity(){
+
+	var city = document.getElementsByName('city')[0].value;
+
+	document.getElementsByName('output')[0].value = city;
+}
+
+
+function getAgreeToTerms(){
+	
+	var rtn;
+	
+//	if(!document.getElementById('yes').checked && !document.getElementById('no').checked) {
+//		rtn = "";
+//	}
+
+	if(document.getElementById('yes').checked) {
+		rtn = document.getElementById('yes').value;
+	}
+	
+	else if(document.getElementById('no').checked) {
+		rtn = document.getElementById('no').value;
+	}
+
+	document.getElementsByName('output')[0].value = rtn;
+}
+
+
+function getUncheckedRadio(){
+	
+	var rtn;
+	
+	if(!document.getElementById('yes').checked && !document.getElementById('no').checked) {
+		rtn = "yes/no";
+	}
+
+	else if(!document.getElementById('yes').checked) {
+		rtn = document.getElementById('yes').value;
+	}
+	
+	else if(!document.getElementById('no').checked) {
+		rtn = document.getElementById('no').value;
+	}
+
+	document.getElementsByName('output')[0].value = rtn;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

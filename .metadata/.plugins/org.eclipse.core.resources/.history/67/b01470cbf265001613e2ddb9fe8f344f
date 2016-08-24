@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:books xmlns:tns="http://www.example.org/BookSchema" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.example.org/BookSchema BookSchema.xsd ">
+  <tns:bookNumber>102</tns:bookNumber>
+  <tns:bookName>tns:bookName</tns:bookName>
+  <tns:price>300</tns:price>
+</tns:books>

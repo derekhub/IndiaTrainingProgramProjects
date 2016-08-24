@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="Scripts/jquery.js"></script>
+<script>
+    window.onload = function() { // can only have 1 onload
+        alert("on haro");
+    }
+
+    $(function() { //document Ready
+        $("#target").html("Event handling with jQuery");
+
+        $("h1").css('text-align', 'center');
+        $("div").addClass('style1');
+    });
+</script>
+<style type="text/css">
+.style1 {
+    text-align: center;
+    color: red;
+    font-size: 1.3em;
+    font-family: Arial;
+}
+</style>
+
+</head>
+<body>
+
+    <h1>JQuery Example</h1>
+
+    <div id="target"></div>
+</body>
+</html> 

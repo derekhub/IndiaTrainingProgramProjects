@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Understanding jQuery Loading</title>
+
+<script type="text/javascript" src="Scripts/jquery.js"></script>
+
+</head>
+<body>
+
+<h1>jQuery Examples</h1>
+
+<div id="target"></div>
+
+</body>
+</html>

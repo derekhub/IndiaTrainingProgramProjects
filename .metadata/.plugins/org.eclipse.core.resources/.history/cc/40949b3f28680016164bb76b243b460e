@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+
+function getCredentials(){
+	
+	var userName = document.getElementsByName('userName')[0].value;
+	var passWord = document.getElementsByName('passWord')[0].value;
+	var credentials = userName + passWord;
+		
+	document.getElementsByName('output')[0].value = credentials;
+}
+
+
+function getSkills(){
+	
+	var skills = document.getElementsByName('skills')[0].value;
+	var skills2 = document.getElementsByName('skills')[1].value;
+	var skills3 = skills + skills2;
+		
+	document.getElementsByName('output')[0].value = skills3;
+}

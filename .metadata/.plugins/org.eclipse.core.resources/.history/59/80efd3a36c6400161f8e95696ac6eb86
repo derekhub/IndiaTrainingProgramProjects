@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My first angular application</title>
+
+<script type="text/javascript" src="Scripts/angular.js"></script>
+
+</head>
+<body>
+
+<div data-ng-app="">
+
+<div style="text-align:center;">{{"Angular" + "Application"}}</div>
+
+<label>User Name</label>
+<input type="text" name="userName" id="usrName" data-ng-model="userName">
+
+<p data-ng-bind="userName"></p>
+
+</div>
+
+</body>
+</html>

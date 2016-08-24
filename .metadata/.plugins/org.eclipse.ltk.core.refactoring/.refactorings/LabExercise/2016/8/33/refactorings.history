@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;DonorId&apos; in &apos;HandsOnExerciseCoreJava.Donor.Donor(...)&apos; to &apos;donorId&apos;&#x0D;&#x0A;- Original project: &apos;LabExercise&apos;&#x0D;&#x0A;- Original element: &apos;HandsOnExerciseCoreJava.Donor.Donor(int, String, String).DonorId&apos;&#x0D;&#x0A;- Renamed element: &apos;DonorId&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;DonorId&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;HandsOnExerciseCoreJava{Donor.java[Donor~Donor~I~QString;~QString;@DonorId!340!350!344!350!I!0!true" name="donorId" references="true" stamp="1470629017364" version="1.0"/>
+</session>

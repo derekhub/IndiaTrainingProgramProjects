@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<a href="jQuery.html #topic1"></a>
+<a href="jQuery.html #topic2"></a>
+<a href="jQuery.html #topic3"></a>
+
+<div id="target"></div>
+
+</body>
+</html>

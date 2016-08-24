@@ -1,0 +1,22 @@
+package com.training.models;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class StatusFinder {
+
+    private HashMap<Long, List<PaymentStatus>> paymentHistory;
+
+    public StatusFinder() {
+        super();
+
+    }
+
+    private void init() {
+        List<PaymentStatus> list1 = new ArrayList<PaymentStatus>();
+        list1.add();
+
+    }
+
+}

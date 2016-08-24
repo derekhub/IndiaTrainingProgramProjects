@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript" src="Scripts/angular.js"></script>
+
+<script type="text/javascript">
+
+var app = angular.module("twoWay", []);
+
+  app.controller("ConverterController", function($scope){
+	  
+	  $scope.data={inr:0,convRate:65.0,usd:0};
+	  
+	    $scope.convert=function(){
+	    	
+	    	$scope.result = $scope.inr*$scope.convRate;
+	    }
+	  
+	  
+  });
+  
+  
+
+</script>
+
+
+<div data-ng-app="twoWay" data-ng-controller="converterController">
+
+  <form>
+  
+    <div>
+      <label>Indian Rupees</label>
+      <input type="text" name="inr" data-ng-model="inr">
+    </div>
+    
+    <div>
+      <label>Conversion Rate</label>
+      <input type="text" name="convRate" data-ng-model="convRate" readonly="readonly">
+    </div>
+    
+    <div>
+      <label>USD</label>
+      {{data.usd}}
+    </div>
+  
+  
+  </form>
+
+</div>
+
+</body>
+</html>

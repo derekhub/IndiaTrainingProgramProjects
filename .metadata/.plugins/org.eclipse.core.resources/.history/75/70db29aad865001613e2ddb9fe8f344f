@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Using NG Repeat and Filters</title>
+
+<script type="text/javascript" src="Scripts/angular.js"></script>
+<script type="text/javascript" src="Scripts/MyApplication.js"></script>
+
+<style type="text/css">
+
+tr,th {
+    color: blue;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div data-ng-app="iteration" data-ng-controller="projectController">
+
+<label>Search</label>
+<input type="search" name="srchCond" data-ng-model="srchCond">
+
+<label>Add</label>
+<input type="button" name="add ppl lol" src="Scripts/MyApplication.js">
+
+<table>
+
+
+<tr>
+  <th>Project</th>
+  <th>Description</th>
+  <th>Cost:INR</th>
+</tr>
+
+
+
+<tr data-ng-repeat="project in projectDetails | filter:srchCond | orderBy:'-cost'">
+  <td>{{project.projCode}}</td>
+  <td>{{project.description | uppercase}}</td>
+  <td>{{project.cost}}</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>

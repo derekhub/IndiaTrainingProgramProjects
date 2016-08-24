@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Using Core Ajax</title>
+
+<script type="text/javascript">
+
+function getData(){
+	
+	var req = new XMLHttpRequest();
+	
+	var userCode = document.getElementById("code").value;
+	
+	console.log("user code: " + userCode);
+	
+	var targetField = document.getElementById("name");
+	
+	var queryString = "http://jsonplaceholder.typicode.com/users/" + escape(userCode);
+	
+}
+
+</script>
+
+</head>
+<body>
+
+  <section>
+    <form action="" >
+    <fieldset>
+      <div>
+        <label>User Code</label>
+        <input type="text" name="code" id="code" onblur="getData()">
+      </div>
+      
+      <div>
+        <label>User Name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      
+      <div>
+        <label>User Code</label>
+        <input type="submit" value="submit">
+      </div>
+    </fieldset>
+    
+    </form>
+  
+  </section>
+
+
+
+</body>
+</html>

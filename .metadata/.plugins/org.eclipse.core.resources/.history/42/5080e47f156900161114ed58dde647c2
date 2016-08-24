@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculate Amount Due</title>
+</head>
+<body>
+
+<datalist id="numbers">
+  <option>99328938283</option>
+  <option>99328938483</option>
+  <option>99328938683</option>
+  <option>99328938783</option>
+</datalist>
+
+
+<form action="FindDueServlet" method="get">
+
+  <label>Phone Number</label>
+  <input type="text" name="phoneNumber" id="phoneNumber" required="required" placeholder="enter the 10 digit phone number" list="numbers">
+  
+  <label id="label-1">Email ID</label>
+  <input type="email" name="email" multiple="multiple" required="required">
+  
+  <input type="submit" value="Find">
+
+</form>
+
+</body>
+</html>

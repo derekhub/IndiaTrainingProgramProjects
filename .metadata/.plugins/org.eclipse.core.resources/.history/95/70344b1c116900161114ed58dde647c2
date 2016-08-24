@@ -1,0 +1,14 @@
+package com.training.domains;
+
+import java.util.HashMap;
+
+public class DueCalculator {
+
+    private HashMap<Long, Double> dueDetails;
+
+    public DueCalculator() {
+        super();
+        dueDetails = new HashMap<Long, Double>();
+    }
+
+}

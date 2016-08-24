@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Using Core Ajax</title>
+</head>
+<body>
+
+  <section>
+    <form action="" >
+      <div>
+        <label>User Code</label>
+        <input type="text" name="code" id="code">
+      </div>
+      
+      <div>
+        <label>User Name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      
+      <div>
+        <label>User Code</label>
+        <input type="text" name="code" id="code">
+      </div>
+    
+    
+    </form>
+  
+  </section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+
+function getCredentials(){
+	
+	var userName = document.getElementsByName('userName')[0].value;
+	var passWord = document.getElementsByName('passWord')[0].value;
+	var credentials = userName + passWord;
+		
+	document.getElementsByName('output')[0].value = credentials;
+}
+
+
+function getSkills(){
+		
+	var skills = "";
+	var skills2 = "";
+	
+	if(document.getElementById('skillsJava').checked) {
+		skills = document.getElementById('skillsJava').value;
+	}
+	
+	if(document.getElementById('skillsDotNet').checked) {
+		skills = document.getElementById('skillsDotNet').value;
+	}
+
+	var skills3 = skills + skills2;
+		
+	document.getElementsByName('output')[0].value = skills3;
+}

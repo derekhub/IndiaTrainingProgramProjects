@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Servlet example</title>
+</head>
+<body>
+
+<a href="Quick">First servlet</a>
+<a href="DueFinder.html">request parameter</a>
+
+</body>
+</html>

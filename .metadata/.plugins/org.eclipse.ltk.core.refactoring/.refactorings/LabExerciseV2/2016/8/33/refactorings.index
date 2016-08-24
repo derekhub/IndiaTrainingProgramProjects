@@ -1,0 +1,15 @@
+1470630305226	Copy compilation unit
+1470630394916	Rename method 'MyDAO'
+1470631031843	Rename field 'dao'
+1470631044331	Rename field 'dsql'
+1470631767091	Delete element
+1470631773500	Delete element
+1470631849957	Delete element
+1470633464240	Delete element
+1470633471370	Delete element
+1470633475707	Delete element
+1470633480884	Delete element
+1470634422915	Rename type 'test'
+1470635091717	Rename local variable 'donorSql'
+1470636231717	Rename local variable 'donorId'
+1470728070741	Rename local variable 'projectSql'

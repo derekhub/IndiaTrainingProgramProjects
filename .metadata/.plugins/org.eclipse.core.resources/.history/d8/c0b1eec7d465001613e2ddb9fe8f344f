@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Using NG Repeat and Filters</title>
+
+<script type="text/javascript" src="Scripts/angular.js"></script>
+<script type="text/javascript" src="Scripts/MyApplication.js"></script>
+
+<style type="text/css">
+
+tr,th {
+    font-color: blue;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div data-ng-app="iteration" data-ng-controller="projectController">
+
+<table>
+
+<tr>
+  <th>Project</th>
+  <th>Description</th>
+  <th>Cost:INR</th>
+</tr>
+
+
+<tr data-ng-repeat="project in projectDetails">
+  <td>{{project.projCode}}</td>
+  <td>{{project.description}}</td>
+  <td>{{project.cost}}</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>

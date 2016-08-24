@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculate Amount Due</title>
+</head>
+<body>
+
+<form action="FindDueServlet" method="get">
+
+  <label>Phone Number</label>
+  <input type="text" name="phoneNumber">
+
+</form>
+
+</body>
+</html>

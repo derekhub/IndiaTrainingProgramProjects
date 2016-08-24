@@ -1,0 +1,26 @@
+package com.training.models;
+
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class StatusFinder {
+
+    private HashMap<Long, List<PaymentStatus>> paymentHistory;
+
+    public StatusFinder() {
+        super();
+
+    }
+
+    private void init() {
+        List<PaymentStatus> list1 = new ArrayList<PaymentStatus>();
+        
+        PaymentStatus pmt1 = new PaymentStatus(1000, new TimeStamp(new Date().getTime()), "pizzahut", 450.00);
+        
+        list1.add();
+
+    }
+
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" src="Scripts/Ajax_HandsOnExercise.js"></script>
+
+</head>
+<body>
+
+<select id="state"></select>
+
+<label for="output"><i>Selected Value:</i> </label> <input type="textbox" name="output"></input>
+
+
+</body>
+</html>

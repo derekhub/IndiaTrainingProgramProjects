@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Event Handling with jQuery</title>
+<script type="text/javascript" src="Scripts/jqeury.js"></script>
+<script type="text/javascript">
+
+$(function(){
+    
+    $("table tr").on("mouseover", 
+    		function(){ $(this).addClass('style1')})
+    		.on("mouseout", 
+    				function(){$(this).removeClass('style1')});
+});
+
+</script>
+
+<style type="text/css">
+table{
+
+  border: 2px solid blue;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+tr,td{
+  border: 2px solid blue;
+}
+
+.style1{
+  background-color: fuchsia;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<table>
+
+<tr>
+<td>name</td>
+<td>skill</td>
+</tr>
+
+<tr>
+<td>derek</td>
+<td>java</td>
+</tr>
+
+<tr>
+<td>nate</td>
+<td>sailing/designing</td>
+</tr>
+
+<tr>
+<td>michelle</td>
+<td>hi</td>
+</tr>
+
+</table>
+
+</body>
+</html>

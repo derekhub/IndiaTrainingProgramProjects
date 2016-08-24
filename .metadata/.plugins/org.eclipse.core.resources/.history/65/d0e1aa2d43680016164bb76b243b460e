@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Selector</title>
+<link href="css/Style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="Scripts/yoloscripts.js"></script>
+
+</head>
+<body>
+
+	<header align="center">Form Selector Example</header>
+
+
+
+	<aside class="indent-1">
+		<label for="output" class="indent-1"><i>Selected Value:</i> </label> <input
+			type="textbox" name="output" class="indent-1"></input>
+
+		<div class="buttons">
+			<div class="border">
+				<button onclick="getCredentials()">Read Text</button>
+			</div>
+			<div class="border">
+				<button onclick="getSkills()">Read Checkbox</button>
+			</div>
+			<div class="border">
+				<button onclick="getCity()">Read Select</button>
+			</div>
+			<div class="border">
+				<button onclick="getAgreeToTerms()">Read Radio</button>
+			</div>
+			<div class="border">
+				<button onclick="getUncheckedRadio()">Read Unchecked Radio</button>
+			</div>
+		</div>
+
+	</aside>
+	<img src="Images/1.png" alt="Hibernate"
+		style="width: 100px; height: 100px;">
+	<section>
+		<fieldset id="field">
+			<legend>New User</legend>
+
+			Username: <input type="text" name="userName"><br>
+			Password: <input type="text" name="passWord"><br> <input
+				type="checkbox" name="skills" id="skillsJava" value="Skills Java">
+			Skills Java <input type="checkbox" name="skills" id="skillsDotNet"
+				value="Dot.NET"> Dot.NET<br> City: <select name="city">
+				<option value="gurgaon">Gurgaon</option>
+				<option value="chennai">Chennai</option>
+				<option value="delhi">Delhi</option>
+			</select> <br> Agree to terms: <input type="radio" name="agreeToTerms"
+				id="yes" value="yes"> Yes <input type="radio"
+				name="agreeToTerms" id="no" value="no"> No
+
+
+
+		</fieldset>
+	</section>
+
+
+
+
+
+
+
+	<footer id="footer" align="center">
+		<p>Show Case Examples</p>
+	</footer>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

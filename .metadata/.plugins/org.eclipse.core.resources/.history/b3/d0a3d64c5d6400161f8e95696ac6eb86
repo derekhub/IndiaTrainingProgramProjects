@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Making Ajax Call</title>
+<script type="text/javascript" src="Scripts/jquery.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+	$("a").on('click', function(event)){
+		event.preventDefault();
+		var content = $(this).data('file');
+		$("#taret")/html(content);
+	}
+})
+
+
+</script>
+</head>
+<body>
+
+<a href="#" data="jQuery.html #topic1">Overview</a>
+<a href="#" data="jQuery.html #topic2">Features</a>
+<a href="#" data-file="jQuery.html #topic3">Adding jQuery</a>
+
+<div id="target"></div>
+
+</body>
+</html>
