@@ -1,0 +1,9 @@
+package com.training.examplelol;
+
+public class ValidateBean {
+
+    public void init() {
+        User u = new User("derek", "choi");
+    }
+
+}

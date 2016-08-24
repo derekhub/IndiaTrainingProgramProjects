@@ -1,0 +1,8 @@
+package com.training.examplelol;
+
+public class ValidateBean {
+    
+    private String username;
+    private String password;
+
+}

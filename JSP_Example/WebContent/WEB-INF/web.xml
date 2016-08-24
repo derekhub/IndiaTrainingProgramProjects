@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>JSP_Example</display-name>
-<context-param>
-	<param-name>email</param-name>
-	<param-value>admin@abc.com</param-value>
-</context-param>
+  <context-param>
+    <param-name>email</param-name>
+    <param-value>admin@abc.com</param-value>
+  </context-param>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -22,5 +22,15 @@
   <servlet-mapping>
     <servlet-name>PrintHistoryServlet</servlet-name>
     <url-pattern>/PrintHistoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ValidateBeanServlet</display-name>
+    <servlet-name>ValidateBeanServlet</servlet-name>
+    <servlet-class>com.training.examplelol.ValidateBeanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ValidateBeanServlet</servlet-name>
+    <url-pattern>/ValidateBeanServlet</url-pattern>
   </servlet-mapping>
 </web-app>

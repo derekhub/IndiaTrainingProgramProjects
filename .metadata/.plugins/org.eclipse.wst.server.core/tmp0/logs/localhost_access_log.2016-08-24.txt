@@ -33,3 +33,15 @@
 0:0:0:0:0:0:0:1 - - [24/Aug/2016:14:39:55 +0530] "GET /JSP_Example/FirstExample.jsp HTTP/1.1" 200 1017
 0:0:0:0:0:0:0:1 - - [24/Aug/2016:14:39:56 +0530] "GET /JSP_Example/FirstExample.jsp HTTP/1.1" 200 1017
 0:0:0:0:0:0:0:1 - - [24/Aug/2016:14:39:56 +0530] "GET /JSP_Example/FirstExample.jsp HTTP/1.1" 200 1017
+127.0.0.1 - - [24/Aug/2016:16:16:54 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [24/Aug/2016:16:16:54 +0530] "GET /JSP_Example/Index.html HTTP/1.1" 304 -
+127.0.0.1 - - [24/Aug/2016:16:17:13 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [24/Aug/2016:16:17:14 +0530] "GET /JSP_Example/FirstExample.jsp HTTP/1.1" 200 1017
+127.0.0.1 - - [24/Aug/2016:16:34:57 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [24/Aug/2016:16:34:58 +0530] "GET /JSP_Example/Examplelol.jsp HTTP/1.1" 200 486
+0:0:0:0:0:0:0:1 - - [24/Aug/2016:16:35:02 +0530] "POST /JSP_Example/ValidateBeanServlet HTTP/1.1" 200 275
+127.0.0.1 - - [24/Aug/2016:16:36:07 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [24/Aug/2016:16:36:07 +0530] "GET /JSP_Example/Examplelol.jsp HTTP/1.1" 200 486
+0:0:0:0:0:0:0:1 - - [24/Aug/2016:16:36:11 +0530] "POST /JSP_Example/ValidateBeanServlet HTTP/1.1" 200 278
+0:0:0:0:0:0:0:1 - - [24/Aug/2016:16:36:14 +0530] "POST /JSP_Example/ValidateBeanServlet HTTP/1.1" 200 275
+0:0:0:0:0:0:0:1 - - [24/Aug/2016:16:36:17 +0530] "POST /JSP_Example/ValidateBeanServlet HTTP/1.1" 200 278
