@@ -1,3 +1,5 @@
+package com.training.entity;
+
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,11 +13,11 @@ public class MySQLConnection {
         try {
             Properties props = new Properties();
 
-            // TESTING NEW SHIT
+            // TESTING NEW STUFF
             InputStream inStream = Thread.currentThread().getContextClassLoader()
                     .getResourceAsStream("DbConnection.properties");
 
-            // THIS WAS FROM BEFORE. TESTING NEW SHIT ABOVE
+            // THIS WAS FROM BEFORE. TESTING NEW STUFF ABOVE
             // FileInputStream inStream = new FileInputStream(new
             // File("DbConnection.properties"));
 
