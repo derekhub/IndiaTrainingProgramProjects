@@ -39,4 +39,14 @@
     <servlet-name>BookingServlet</servlet-name>
     <url-pattern>/BookingServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DisplayBookingInformationServlet</display-name>
+    <servlet-name>DisplayBookingInformationServlet</servlet-name>
+    <servlet-class>com.training.servlets.DisplayBookingInformationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayBookingInformationServlet</servlet-name>
+    <url-pattern>/DisplayBookingInformationServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

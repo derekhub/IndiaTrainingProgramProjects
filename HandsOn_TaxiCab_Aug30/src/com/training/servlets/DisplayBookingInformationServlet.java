@@ -7,21 +7,17 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import com.training.domains.TaxiUser;
-import com.training.entity.MyDAO;
 
 /**
- * Servlet implementation class BookingServlet
+ * Servlet implementation class DisplayBookingInformationServlet
  */
-public class BookingServlet extends HttpServlet {
+public class DisplayBookingInformationServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public BookingServlet() {
+    public DisplayBookingInformationServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,20 +30,25 @@ public class BookingServlet extends HttpServlet {
             throws ServletException, IOException {
         // TODO Auto-generated method stub
 
-        HttpSession session = request.getSession();
+        String strName = request.getParameter("name");
+        int intTelephone = Integer.parseInt(request.getParameter("telephone"));
+        String strBookingType = request.getParameter("type");
+        String strPickupPlace = request.getParameter("pickupPlace");
+        String strdropPlace = request.getParameter("dropPlace");
 
-        TaxiUser tempUser = (TaxiUser) session.getAttribute("TaxiUser");
+        System.out.println(strName);
+        System.out.println(intTelephone);
+        System.out.println(strBookingType);
+        System.out.println(strPickupPlace);
+        System.out.println(strdropPlace);
 
-        MyDAO dao = new MyDAO();
+        request.setAttribute("strName", strName);
+        request.setAttribute("intTelephone", intTelephone);
+        request.setAttribute("strBookingType", strBookingType);
+        request.setAttribute("strPickupPlace", strPickupPlace);
+        request.setAttribute("strdropPlace", strdropPlace);
 
-        TaxiUser currentUser = dao.find(tempUser.getEmail());
-
-        System.out.println(currentUser.getName());
-
-        request.setAttribute("currentUserName", currentUser.getName());
-        request.setAttribute("currentTelephone", currentUser.getTelephone());
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher("Booking.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("DisplayBookingInformation.jsp");
         dispatcher.forward(request, response);
 
     }

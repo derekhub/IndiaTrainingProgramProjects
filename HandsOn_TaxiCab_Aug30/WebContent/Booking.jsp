@@ -11,10 +11,10 @@
 
 <body>
 
-<form action="ReadLoginValues.jsp" method="post">
+<form action="DisplayBookingInformationServlet" method="post">
 
-  Name: <input type="text" name="name" value=""><br> 
-  Telephone: <input type="text" name="telephone"><br>
+  Name: <input type="text" name="name" value="${currentUserName }" readonly><br> 
+  Telephone: <input type="text" name="telephone" value="${currentTelephone }" readonly><br>
   Booking Type: <select name="type">
   <option value="meter">meter</option>
   <option value="type2">type2</option>

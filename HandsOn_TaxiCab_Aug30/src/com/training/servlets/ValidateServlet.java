@@ -53,7 +53,7 @@ public class ValidateServlet extends HttpServlet {
 
         if (validation == true) {
             System.out.println("Validation successful");
-            RequestDispatcher dispatcher = request.getRequestDispatcher("Booking.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("ReadLoginValues.jsp");
             dispatcher.forward(request, response);
         } else {
             RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
