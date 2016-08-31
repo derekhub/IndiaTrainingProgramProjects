@@ -4,11 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Confirmation Page</title>
+<title>Booking Later Confirmation</title>
 </head>
-
-<a href="index.jsp"> Index</a> 
-
 <body>
 
 <h1>ARE THESE YOUR DETAILS?!?!?!?!?!?</h1>
@@ -18,12 +15,12 @@ ${intTelephone } <br>
 ${strBookingType } <br>
 ${strPickupPlace } <br>
 ${strdropPlace } <br>
+${strDate } <br>
+${strTime } <br>
 
 <form action="AvailableCabsNow.jsp" method="post">
   <input type="submit" value="Confirm">
 </form>
-
- 
 
 </body>
 </html>

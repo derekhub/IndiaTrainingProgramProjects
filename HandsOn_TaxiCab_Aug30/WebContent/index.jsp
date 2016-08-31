@@ -13,7 +13,7 @@
 
 <form action="ValidateServlet" method="post">
 
-  <label>LOGIN HERE!!! </label><br><br>
+  <h1>LOGIN HERE!!! </h1>
   Email: <input type="text" name="email"><br>
   Password: <input type="text" name="password"><br>
   

@@ -49,4 +49,24 @@
     <servlet-name>DisplayBookingInformationServlet</servlet-name>
     <url-pattern>/DisplayBookingInformationServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BookLaterServlet</display-name>
+    <servlet-name>BookLaterServlet</servlet-name>
+    <servlet-class>com.training.servlets.BookLaterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookLaterServlet</servlet-name>
+    <url-pattern>/BookLaterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DisplayBookingLaterInformationServlet</display-name>
+    <servlet-name>DisplayBookingLaterInformationServlet</servlet-name>
+    <servlet-class>com.training.servlets.DisplayBookingLaterInformationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayBookingLaterInformationServlet</servlet-name>
+    <url-pattern>/DisplayBookingLaterInformationServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

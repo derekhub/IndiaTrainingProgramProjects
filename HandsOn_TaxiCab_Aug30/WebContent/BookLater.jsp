@@ -4,14 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Book your stuff HERE</title>
+<title>For booking later</title>
 </head>
-
-<a href="index.jsp"> Index</a> <br><br>
-
 <body>
 
-<form action="DisplayBookingInformationServlet" method="post">
+<form action="DisplayBookingLaterInformationServlet" method="post">
 
   Name: <input type="text" name="name" value="${currentUserName }" readonly><br> 
   Telephone: <input type="text" name="telephone" value="${currentTelephone }" readonly><br>
@@ -22,13 +19,11 @@
 </select><br>
   Pickup Place: <input type="text" name="pickupPlace"><br>
   Drop Place: <input type="text" name="dropPlace"><br>
+  Pick Up Date: <input type="date" name="date"><br>
+  Pick Up Time: <input type="time" name="time"><br>
   
   <input type="submit" value="Book Now">
   
-</form>
-  
-<form action="BookLaterServlet" method="post">
-  <input type="submit" value="Book Later">
 </form>
 
 </body>
