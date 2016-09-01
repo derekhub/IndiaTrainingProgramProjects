@@ -38,7 +38,6 @@ public class ValidateServlet extends HttpServlet {
         String strPassword = request.getParameter("password");
         String strEmail = request.getParameter("email");
 
-        System.out.println(strEmail + " Email Printed");
         MyDAO dao = new MyDAO();
 
         TaxiUser user = dao.find(strEmail);
@@ -52,7 +51,6 @@ public class ValidateServlet extends HttpServlet {
         }
 
         if (validation == true) {
-            System.out.println("Validation successful");
             RequestDispatcher dispatcher = request.getRequestDispatcher("ReadLoginValues.jsp");
             dispatcher.forward(request, response);
         } else {

@@ -21,18 +21,18 @@
   </tr>
   
   <tr>
-    <td>HR-01-9899</td>
-    <td>Swift-Dezire</td>
-    <td>Anil Singh</td>
-    <td>Sector 20</td>
+    <td>HR-02-2222</td>
+    <td>Lamborghini</td>
+    <td>Steve Johnson</td>
+    <td>Toronto</td>
     <td><a href="BookingConfirmed.jsp">Book</a></td>
   </tr>
   
   <tr>
-    <td>HR-01-9899</td>
-    <td>Maruti-Ritz</td>
-    <td>Harinder</td>
-    <td>Sector 21</td>
+    <td>HR-02-8888</td>
+    <td>Mercedes-Benz</td>
+    <td>Hung Lo</td>
+    <td>Richmond Hill</td>
     <td><a href="BookingConfirmed.jsp">Book</a></td>
   </tr>
 

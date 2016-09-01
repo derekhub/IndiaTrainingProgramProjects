@@ -9,6 +9,9 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <session-config>
+    <session-timeout>10</session-timeout>
+  </session-config>
   <servlet>
     <description></description>
     <display-name>ValidateServlet</display-name>
@@ -68,5 +71,55 @@
   <servlet-mapping>
     <servlet-name>DisplayBookingLaterInformationServlet</servlet-name>
     <url-pattern>/DisplayBookingLaterInformationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ScheduledTripsServlet</display-name>
+    <servlet-name>ScheduledTripsServlet</servlet-name>
+    <servlet-class>com.training.servlets.ScheduledTripsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ScheduledTripsServlet</servlet-name>
+    <url-pattern>/ScheduledTripsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CompletedTripsServlet</display-name>
+    <servlet-name>CompletedTripsServlet</servlet-name>
+    <servlet-class>com.training.servlets.CompletedTripsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CompletedTripsServlet</servlet-name>
+    <url-pattern>/CompletedTripsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CancelledTripsServlet</display-name>
+    <servlet-name>CancelledTripsServlet</servlet-name>
+    <servlet-class>com.training.servlets.CancelledTripsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CancelledTripsServlet</servlet-name>
+    <url-pattern>/CancelledTripsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SpecialOffersServlet</display-name>
+    <servlet-name>SpecialOffersServlet</servlet-name>
+    <servlet-class>com.training.servlets.SpecialOffersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SpecialOffersServlet</servlet-name>
+    <url-pattern>/SpecialOffersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AvailableCabsNowServlet</display-name>
+    <servlet-name>AvailableCabsNowServlet</servlet-name>
+    <servlet-class>com.training.servlets.AvailableCabsNowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AvailableCabsNowServlet</servlet-name>
+    <url-pattern>/AvailableCabsNowServlet</url-pattern>
   </servlet-mapping>
 </web-app>

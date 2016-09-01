@@ -7,7 +7,9 @@
 <title>Book your stuff HERE</title>
 </head>
 
-<a href="index.jsp"> Index</a> <br><br>
+<a href="index.jsp"> Index</a> <br>
+<a href="RateCard.jsp"> Rate Card</a> <br>
+<a href="MyTrips.jsp"> My Trips</a> <br><br>
 
 <body>
 

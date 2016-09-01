@@ -18,7 +18,7 @@ ${strdropPlace } <br>
 ${strDate } <br>
 ${strTime } <br>
 
-<form action="AvailableCabsNow.jsp" method="post">
+<form action="AvailableCabsLater.jsp" method="post">
   <input type="submit" value="Confirm">
 </form>
 
