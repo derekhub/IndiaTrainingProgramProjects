@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- Setter Dependency Injection -->
+<bean id="patBean1" class="com.training.domains.Patient" scope="prototype"> 
+  <property name="patientId" value="101"/> 
+  <property name="patientName" value="Ramesh"/> 
+  <property name="patientType" value="Out Patient"/> 
+</bean>
+
+<!-- Setter Dependency with Namespace -->
+<bean id="docBean1" class="com.training.domains.Doctor" p:doctorCode="10200" p:doctorName="Suresh" p:specialization="ENT" p:patient-ref="patBean1"/> 
+
+<!-- Constructor Dependency with Namespace -->
+<bean id="patBean2" class="com.training.domains.Patient" c:patientId="102" c:patientName="Rajesh" c:patientType="InPatient"></bean>
+
+<!-- Constructor Dependency by Name -->
+<bean id="patBean3" class="com.training.domains.Patient">
+  <constructor-arg name="patientId" value="103"></constructor-arg>
+  <constructor-arg name="patientName" value ="Kumar"></constructor-arg>
+  <constructor-arg name="patientType" value="OutPatient"></constructor-arg>
+</bean>
+
+<!-- Collection Dependency Injection -->
+<bean id="docBean2" class="com.training.domains.Doctor" p:doctorCode="10200" p:doctorName="Suresh" p:specialization="ENT" p:patient-ref="patBean1">
+  <property name="patientList">
+    <list value-type="com.training.domains.Patient">
+      <ref bean="patBean1"></ref>
+      <ref bean="patBean2"></ref>
+      <ref bean="patBean3"></ref>
+    </list>
+  </property>
+</bean> 
+
+<!--  -->
+<bean id="patient" class="com.training.domains.Patient">
+  <property name="patientId" value="201"></property>
+  <property name="patientName" value="Mayanak"></property>
+  <property name="patientType" value="OutPatient"></property>
+</bean>
+
+<!-- Autowiring by name. IT HAS ALREADY ALL SETTERS SET SO THE ONLY THING LEFT IS A patient AND IT MATCHES IT ABOVE SINCE 
+id=patient. IT IS byName. IF IT IS byType IT WILL THROW EXCEPTION BECAUSE TOO MANY PATIENTS IN THIS FILE-->
+<bean id="doctor" class="com.training.domains.Doctor" autowire="byName">
+  <property name="doctorCode" value="2020"></property>
+  <property name="doctorName" value="amit"></property>
+  <property name="specialization" value="Eye"></property>
+</bean>
+
+
+
+
+</beans>
