@@ -1,5 +1,6 @@
 package com.training.domains;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -13,6 +14,8 @@ public class Doctor {
     private Patient patient;
 
     private List<Patient> patientList;
+
+    private HashMap<String, String> supportStaff;
 
     public Doctor() {
         super();
@@ -66,6 +69,14 @@ public class Doctor {
 
     public void setPatientList(List<Patient> patientList) {
         this.patientList = patientList;
+    }
+
+    public HashMap<String, String> getSupportStaff() {
+        return supportStaff;
+    }
+
+    public void setSupportStaff(HashMap<String, String> supportStaff) {
+        this.supportStaff = supportStaff;
     }
 
     @Override

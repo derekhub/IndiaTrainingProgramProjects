@@ -23,10 +23,14 @@ public class ExampleOne {
             System.out.println("Doctor := " + doctor);
             System.out.println("Patient := " + patientBean);
 
+            // list----------------------------------
             Doctor doctor2 = ctx.getBean("docBean2", Doctor.class);
-
             System.out.println(doctor2);
             System.out.println(doctor2.getPatientList().toString());
+
+            // hashmap----------------------------------
+            Doctor mapDoctor = ctx.getBean("mapDoctor", Doctor.class);
+            System.out.println(mapDoctor.getSupportStaff().toString());
 
         } catch (Exception e) {
             e.printStackTrace();

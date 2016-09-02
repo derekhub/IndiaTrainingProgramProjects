@@ -53,6 +53,17 @@ id=patient. IT IS byName. IF IT IS byType IT WILL THROW EXCEPTION BECAUSE TOO MA
 </bean>
 
 
+<bean id="mapDoctor" class="com.training.domains.Doctor">
+  <property name="supportStaff">
+    <map key-type="java.lang.String" value-type="java.lang.String">
+      <entry key="xray person" value="he xrays stuff" />
+      <entry key="nurse" value="she nurses stuff" />
+      <entry key="pharmacist" value="she gives meds to people" />
+    </map>
+  </property>
+</bean>
+
+
 
 
 </beans>
