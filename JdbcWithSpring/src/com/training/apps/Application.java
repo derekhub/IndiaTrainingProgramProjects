@@ -15,16 +15,26 @@ public class Application {
 
             MyDao<Customer> dao = ctx.getBean(CustomerDao.class);
 
-            Customer cust = ctx.getBean(Customer.class);
+            // ADD-----------------------------------------------------------------
+            // Customer cust = ctx.getBean(Customer.class);
+            //
+            // cust.setCustomerNumber(1);
+            // cust.setCustomerName("Derek");
+            // cust.setEmail("a@hotmail.com");
+            // cust.setPhoneNUmber(123123123);
+            //
+            // int rowsInserted = dao.add(cust);
+            //
+            // System.out.println(rowsInserted);
 
-            cust.setCustomerNumber(2020);
-            cust.setCustomerName("Ankit3");
-            cust.setEmail("a@hotmail.com");
-            cust.setPhoneNUmber(123123123);
+            // FIND-----------------------------------------------------------------
+            // System.out.println(dao.find(1));
 
-            int rowsInserted = dao.add(cust);
-
-            System.out.println(rowsInserted);
+            // FIND
+            // ALL-----------------------------------------------------------------
+            for (Customer c : dao.findAll()) {
+                System.out.println(c);
+            }
 
         } catch (Exception e) {
             System.out.println(e.toString());

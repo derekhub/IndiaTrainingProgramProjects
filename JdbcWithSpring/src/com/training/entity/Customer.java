@@ -54,4 +54,10 @@ public class Customer {
         this.phoneNUmber = phoneNUmber;
     }
 
+    @Override
+    public String toString() {
+        return "Customer [customerNumber=" + customerNumber + ", customerName=" + customerName + ", email=" + email
+                + ", phoneNUmber=" + phoneNUmber + "]";
+    }
+
 }

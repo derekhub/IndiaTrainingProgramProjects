@@ -26,4 +26,6 @@ p:driverClassName="${db.driverClass}" p:username="${db.userName}" p:password="${
 
 <bean id="dao" class="com.training.daos.CustomerDao"></bean>
 
+<bean id="mapper" class="org.springframework.jdbc.core.BeanPropertyRowMapper" p:mappedClass="com.training.entity.Customer"/>
+
 </beans>
