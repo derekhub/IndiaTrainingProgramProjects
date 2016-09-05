@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+
+
+<!-- Setter Dependency with Namespace -->
+<bean id="invoiceBean1" class="com.training.domains.Invoice" p:invoiceNumber="1" p:amount="30" autowire="byType">
+  <property name="itemList">
+    <list value-type="com.training.domains.Item">
+      <ref bean="item1"></ref>
+      <ref bean="item2"></ref>
+      <ref bean="item3"></ref>
+    </list>
+  </property>
+</bean> 
+
+<bean id="custBean1" class="com.training.domains.Customer" c:customerId="102" c:customerName="Rajesh"></bean>
+
+
+<bean id="item1" class="com.training.domains.Item" c:itemName="food" c:itemNumber="101" c:rate="888"></bean>
+<bean id="item2" class="com.training.domains.Item" c:itemName="soap" c:itemNumber="102" c:rate="150"></bean>
+<bean id="item3" class="com.training.domains.Item" c:itemName="water" c:itemNumber="103" c:rate="50"></bean>
+
+
+
+</beans>
+
+
+
