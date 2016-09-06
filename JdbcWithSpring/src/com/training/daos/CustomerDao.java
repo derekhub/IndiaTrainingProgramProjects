@@ -26,7 +26,7 @@ public class CustomerDao implements MyDao {
         String sql = "insert into customer values(?,?,?,?)";
 
         int rowsInserted = template.update(sql, object.getCustomerNumber(), object.getCustomerName(), object.getEmail(),
-                object.getPhoneNUmber());
+                object.getPhoneNumber());
 
         return rowsInserted;
     }

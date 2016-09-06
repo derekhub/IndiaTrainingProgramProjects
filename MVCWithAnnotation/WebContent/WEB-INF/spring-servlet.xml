@@ -20,5 +20,8 @@ in a hierarchy, first by name and then type -->
 <bean id="viewResolver"
     class="org.springframework.web.servlet.view.InternalResourceViewResolver"
     p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
+    
+<import resource="classpath:bean.xml"></import>
+
 
 </beans>

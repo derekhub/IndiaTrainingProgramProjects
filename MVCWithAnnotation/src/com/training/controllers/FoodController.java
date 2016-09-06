@@ -19,6 +19,12 @@ public class FoodController {
     @Autowired
     private Food food;
 
+    @ModelAttribute("refData")
+    public String[] getCuisineData() {
+
+        return new String[] { "Indian", "French", "Chinese", "USA" };
+    }
+
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView initForm() {
 

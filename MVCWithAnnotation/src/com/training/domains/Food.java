@@ -9,6 +9,8 @@ public class Food {
     private String description;
     private double unitPrice;
 
+    private String cuisine;
+
     public Food() {
         super();
     }
@@ -37,9 +39,18 @@ public class Food {
         this.unitPrice = unitPrice;
     }
 
+    public String getCuisine() {
+        return cuisine;
+    }
+
+    public void setCuisine(String cuisine) {
+        this.cuisine = cuisine;
+    }
+
     @Override
     public String toString() {
-        return "Food [foodCode=" + foodCode + ", description=" + description + ", unitPrice=" + unitPrice + "]";
+        return "Food [foodCode=" + foodCode + ", description=" + description + ", unitPrice=" + unitPrice + ", cuisine="
+                + cuisine + "]";
     }
 
 }

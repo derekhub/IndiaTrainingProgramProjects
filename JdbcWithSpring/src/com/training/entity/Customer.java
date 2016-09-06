@@ -8,18 +8,18 @@ public class Customer {
     private long customerNumber;
     private String customerName;
     private String email;
-    private long phoneNUmber;
+    private long phoneNumber;
 
     public Customer() {
         super();
     }
 
-    public Customer(long customerNumber, String customerName, String email, long phoneNUmber) {
+    public Customer(long customerNumber, String customerName, String email, long phoneNumber) {
         super();
         this.customerNumber = customerNumber;
         this.customerName = customerName;
         this.email = email;
-        this.phoneNUmber = phoneNUmber;
+        this.phoneNumber = phoneNumber;
     }
 
     public long getCustomerNumber() {
@@ -46,18 +46,18 @@ public class Customer {
         this.email = email;
     }
 
-    public long getPhoneNUmber() {
-        return phoneNUmber;
+    public long getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setPhoneNUmber(long phoneNUmber) {
-        this.phoneNUmber = phoneNUmber;
+    public void setPhoneNumber(long phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
     public String toString() {
         return "Customer [customerNumber=" + customerNumber + ", customerName=" + customerName + ", email=" + email
-                + ", phoneNUmber=" + phoneNUmber + "]";
+                + ", phoneNumber=" + phoneNumber + "]";
     }
 
 }
