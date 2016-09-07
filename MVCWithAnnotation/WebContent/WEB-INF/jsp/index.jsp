@@ -17,5 +17,14 @@
   </ul>
 </section>
 
+<form action="addCustomer/findCustomer" method="post">
+Customer Id: <input type="text" name="key"><br>
+<input type="submit" value="Find">
+</form>
+
+<form action="addCustomer/findAllCustomers" method="get">
+<input type="submit" value="Find All">
+</form>
+
 </body>
 </html>

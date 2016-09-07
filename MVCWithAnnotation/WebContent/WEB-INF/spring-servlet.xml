@@ -23,5 +23,6 @@ in a hierarchy, first by name and then type -->
     
 <import resource="classpath:bean.xml"></import>
 
+<mvc:resources location="/resources/" mapping="/resources/**"/>
 
 </beans>
