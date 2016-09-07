@@ -4,19 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome</title>
+<title>Show Customer Details</title>
 </head>
 <body>
 
-${command}
-
-<table style="border: 2px solid blue">
-  <tr>
-    <td>${command.foodCode}</td>
-    <td>${command.description}</td>
-    <td>${command.unitPrice}</td>
-  </tr>
-</table>
+${foundCustomer }
 
 </body>
 </html>

@@ -10,13 +10,6 @@
 
 ${command}
 
-<table style="border: 2px solid blue">
-  <tr>
-    <td>${command.foodCode}</td>
-    <td>${command.description}</td>
-    <td>${command.unitPrice}</td>
-  </tr>
-</table>
 
 </body>
 </html>

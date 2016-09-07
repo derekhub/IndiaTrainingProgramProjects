@@ -4,19 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome</title>
+<title>Spring MVC</title>
 </head>
 <body>
 
-${command}
+<h1 style="text-align:center">Spring MVC with Annotations</h1>
 
-<table style="border: 2px solid blue">
-  <tr>
-    <td>${command.foodCode}</td>
-    <td>${command.description}</td>
-    <td>${command.unitPrice}</td>
-  </tr>
-</table>
+<section>
+  <ul>
+    <li><a href="AddRequest">Add request bro</a></li>
+  </ul>
+</section>
+
 
 </body>
 </html>

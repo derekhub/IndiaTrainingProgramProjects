@@ -1,7 +1,10 @@
 package com.training.controllers;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -36,8 +39,15 @@ public class FoodController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String onSubmit(@ModelAttribute("itemAdded") Food food) {
-        return "Welcome";
+    public String onSubmit(@Valid @ModelAttribute("command") Food food, BindingResult result) {
+
+        System.out.println(result.hasErrors());
+
+        if (result.hasErrors()) {
+            return "AddFood";
+        } else {
+            return "Welcome";
+        }
     }
 
 }

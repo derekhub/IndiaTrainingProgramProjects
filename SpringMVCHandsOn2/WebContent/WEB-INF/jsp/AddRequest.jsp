@@ -6,22 +6,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<title>Add Food Items</title>
+<title>Adddddddd meeeeeeeeee</title>
 </head>
 <body>
 
 <form:form action="#" method="post">
-  <label>Food Item Code</label>
-  <form:input path="foodCode"/><span style="color:red"><form:errors path="foodCode"/></span>
+  <label>request Type</label>
+  <form:input path="requestType"/>
   
-  <label>Description</label>
-  <form:input path="description"/><span style="color:red"><form:errors path="description"/></span>
+  <label>request Id</label>
+  <form:input path="requestId"/>
   
-  <label>Unit Price</label>
-  <form:input path="unitPrice"/><span style="color:red"><form:errors path="unitPrice"/></span>
+  <label>description</label>
+  <form:input path="description"/>
   
-  <label>Cuisine</label>
-  <form:select items="${refData}" path="cuisine"/>
+  <label>customer Id</label>
+  <form:input path="customerId"/>
   
   <input type="submit" value="add">
   
