@@ -27,7 +27,9 @@ in a hierarchy, first by name and then type -->
 
 
 
-<bean id="sessionResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" p:defaultLocale="fr"></bean>
+<bean id="LocaleResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" p:defaultLocale="fr"></bean>
+
+
 
 <bean id="interceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" p:paramName="lang"></bean>
 
