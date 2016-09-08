@@ -11,4 +11,9 @@ public class FirstController {
         return "index";
     }
 
+    @RequestMapping("studentDetails")
+    public String studentDetails() {
+        return "GetStudentDetails";
+    }
+
 }

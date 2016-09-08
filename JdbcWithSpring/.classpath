@@ -2,7 +2,24 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringCore"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringJdbc"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/hibernate-validator-4.0.0.GA.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/JdbcWithSpring2.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/slf4j-api-1.7.10.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-aop-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-beans-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-context-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-context-support-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-core-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-expression-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-jdbc-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-orm-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-tx-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-web-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/spring-webmvc-4.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaBatchJuly16/jars yo/validation-api-1.0.0.GA.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

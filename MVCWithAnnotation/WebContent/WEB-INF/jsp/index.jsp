@@ -14,6 +14,7 @@
   <ul>
     <li><a href="addFood">Form Handling</a></li>
     <li><a href="addCustomer">add customer</a></li>
+    <li><a href="studentDetails">find student details</a></li>
   </ul>
 </section>
 
