@@ -15,6 +15,7 @@
     <li><a href="addFood">Form Handling</a></li>
     <li><a href="addCustomer">add customer</a></li>
     <li><a href="studentDetails">find student details</a></li>
+    <li><a href="login">login (language stuff)</a></li>
   </ul>
 </section>
 

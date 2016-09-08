@@ -25,8 +25,12 @@ in a hierarchy, first by name and then type -->
 
 <mvc:resources location="/resources/" mapping="/resources/**"/>
 
+
+
 <bean id="sessionResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" p:defaultLocale="fr"></bean>
 
-<bean id="interceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" p:defaultLocale="lang"></bean>
+<bean id="interceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" p:paramName="lang"></bean>
+
+<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource" p:basename="classpath:messages"></bean>
 
 </beans>

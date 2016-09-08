@@ -12,20 +12,27 @@
 </head>
 <body>
 
+<c:out value="Language" />
+<a href="?lang=en">English</a>
+<a href="?lang=fr">French</a>
+<a href="?lang=de">German</a>
+
+<h1>Spring mvc applciation</h1>
+
 <spring:message code="lbl.btn.submit" var="btnText"></spring:message>
 
 <form:form action="" method="post">
 
-  <spring:message code="lbl.userName"></spring:message>
+  <label><spring:message code="lbl.userName"></spring:message></label>
   <form:input path="userName"></form:input>
   
-  <spring:message code="lbl.passWord"></spring:message>
+  <label><spring:message code="lbl.passWord"></spring:message></label>
   <form:input path="passWord"></form:input>
   
-  <spring:message code="lbl.phoneNumber"></spring:message>
+  <label><spring:message code="lbl.phoneNumber"></spring:message></label>
   <form:input path="phoneNumber"></form:input>
   
-  <form:input path="submit" value="${btnText }"></form:input>
+  <input type="submit" value="${btnText }"><input>
   
 </form:form>
 
