@@ -21,6 +21,18 @@ in a hierarchy, first by name and then type -->
     class="org.springframework.web.servlet.view.InternalResourceViewResolver"
     p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
     
+<bean id="propertyConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" 
+p:location="classpath:DbConnection.properties"></bean>
+
+<bean id="dataSrc" class="org.springframework.jdbc.datasource.DriverManagerDataSource" 
+p:driverClassName="${db.driverClass}" p:username="${db.userName}" p:password="${db.passWord}" p:url="${db.driverURL}"></bean>
+
+<bean id="template" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSrc"/>
+    
+<bean id="dao" class="com.training.dao.ServiceDao"></bean>
+
+<bean id="mapper" class="org.springframework.jdbc.core.BeanPropertyRowMapper" p:mappedClass="com.training.entity.ServiceRequest"/>
+    
 <!-- <import resource="classpath:bean.xml"></import> -->
 
 

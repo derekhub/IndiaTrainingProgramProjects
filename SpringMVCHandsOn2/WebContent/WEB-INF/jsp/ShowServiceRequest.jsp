@@ -14,27 +14,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<title>Spring MVC</title>
+<title>Show service request G</title>
 </head>
 <body>
 
-<h1 style="text-align:center">Spring MVC with Annotations</h1>
-
-<section>
-  <ul>
-    <li><a href="AddRequest">Add Request</a></li>
-  </ul>
-</section>
-
-<form action="AddRequest/findRequest" method="post">
-Request Id: <input type="text" name="key"><br>
-<input type="submit" value="Find" class="btn btn-lg btn-primary">
-</form>
-
-<form action="AddRequest/findAllRequests" method="get">
-<input type="submit" value="Find All" class="btn btn-lg btn-success">
-</form>
-
+${serviceRequest }
 
 </body>
 </html>

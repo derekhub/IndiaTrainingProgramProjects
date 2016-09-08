@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServiceRequest {
 
-    private String requestType;
     private int requestId;
+    private String requestType;
     private String description;
     private int customerId;
 
@@ -14,10 +14,10 @@ public class ServiceRequest {
         super();
     }
 
-    public ServiceRequest(String requestType, int requestId, String description, int customerId) {
+    public ServiceRequest(int requestId, String requestType, String description, int customerId) {
         super();
-        this.requestType = requestType;
         this.requestId = requestId;
+        this.requestType = requestType;
         this.description = description;
         this.customerId = customerId;
     }
@@ -56,7 +56,7 @@ public class ServiceRequest {
 
     @Override
     public String toString() {
-        return "ServiceRequest [requestType=" + requestType + ", requestId=" + requestId + ", description="
+        return "ServiceRequest [requestId=" + requestId + ", requestType=" + requestType + ", description="
                 + description + ", customerId=" + customerId + "]";
     }
 
