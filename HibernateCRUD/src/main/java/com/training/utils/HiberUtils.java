@@ -12,7 +12,6 @@ public class HiberUtils {
 
             factory = new Configuration().configure().buildSessionFactory();
 
-            System.out.println("debug");
         }
 
         return factory;
