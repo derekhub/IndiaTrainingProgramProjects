@@ -7,40 +7,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-<context:annotation-config></context:annotation-config>
-<context:component-scan base-package="com.training"></context:component-scan>
 
- 
-<bean id="dataSrc" class="org.springframework.jdbc.datasource.DriverManagerDataSource" 
-p:driverClassName="oracle.jdbc.driver.OracleDriver" p:username="system" p:password="sapjuly16" 
-p:url="jdbc:oracle:thin:@localhost:1521:XE"></bean>
-
-<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate" p:sessionFactory-ref="sessionFactory"></bean>
- 
-
-<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean" p:dataSource-ref="dataSrc">
-  <property name="mappingResources">
-    <list>
-      <value>Donor.hbm.xml</value>
-      <value>Project.hbm.xml</value>
-      <value>Address.hbm.xml</value>      
-    </list>
-  </property>
-  <property name="hibernateProperties">
-    <props>
-      <prop key="hibernate.hbm2ddl.auto">update</prop>
-      <prop key="hibernate.show_sql">true</prop>
-      <prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
-    </props>
-  </property>
-</bean>
-
-
-
-
+<!-- Setter Dependency Injection -->
 
 <bean id="addressbean1" class="com.training.domains.Address" c:addressLine1="123 yolo street" c:addressLine2="456 teehee street"
  c:cityName="toronto" c:pinCode="12345"></bean>
+
 
 <bean id="donorBean1" class="com.training.domains.Donor" scope="prototype"> 
   <property name="handPhone" value="911"/> 
@@ -60,5 +32,28 @@ p:url="jdbc:oracle:thin:@localhost:1521:XE"></bean>
 </bean>
 
 
+
+
+
+<!-- 
+
+<context:annotation-config></context:annotation-config>
+<context:component-scan base-package="com.training"></context:component-scan>
+
+
+<bean id="dataSrc" class="org.springframework.jdbc.datasource.DriverManagerDataSource" 
+p:driverClassName="oracle.jdbc.driver.OracleDriver" p:username="system" p:password="sapjuly16" 
+p:url="jdbc:oracle:thin:@localhost:1521:XE"></bean>
+
+<bean id="template" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSrc"/>
+
+ -->
+
+<!-- initialize 'dao' here instead of in class so we don't have to use 'new' in Java. Just ctx.getBean(CustomerDao.class) 
+<bean id="dao" class="com.training.daos.DonorDao"></bean>
+
+<bean id="mapper" class="org.springframework.jdbc.core.BeanPropertyRowMapper" p:mappedClass="com.training.domains.Donor"/>
+
+-->
 
 </beans>

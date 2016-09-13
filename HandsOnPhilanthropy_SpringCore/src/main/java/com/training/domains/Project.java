@@ -70,7 +70,7 @@ public class Project {
     @Override
     public String toString() {
         return "Project [projectId=" + projectId + ", projectName=" + projectName + ", projectBudget=" + projectBudget
-                + ", amountCollected=" + amountCollected + "]";
+                + ", amountCollected=" + amountCollected + ", donorList=" + donorList + "]";
     }
 
 }
