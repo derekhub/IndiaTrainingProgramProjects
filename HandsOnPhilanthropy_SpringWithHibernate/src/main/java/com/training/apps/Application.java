@@ -9,8 +9,8 @@ public class Application {
 
     public static void main(String[] args) {
 
-        try (ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("bean.xml")) {
-
+        try {
+            ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("bean.xml");
             System.out.println("debug");
 
             DonorDao dao = ctx.getBean(DonorDao.class);
@@ -21,7 +21,7 @@ public class Application {
             System.out.println(dao.add(donor));
 
         } catch (Exception e) {
-            System.out.println(e.toString());
+            System.out.println(e.getMessage());
         }
 
     }

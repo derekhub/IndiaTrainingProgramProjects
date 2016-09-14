@@ -11,10 +11,23 @@ import com.training.domains.Donor;
 @Component
 public class DonorDao {
 
+    // private SessionFactory factory;
+    //
+    // public DonorDao() {
+    // super();
+    //
+    // factory = HiberUtils.getSessionFactory();
+    //
+    // }
+
     @Autowired
-    HibernateTemplate template;
+    private HibernateTemplate template;
 
     public Object add(Donor object) {
+        // ClassPathXmlApplicationContext ctx = new
+        // ClassPathXmlApplicationContext("bean.xml");
+        // template = ctx.getBean(HibernateTemplate.class);
+
         Object key = template.save(object);
         return key;
 

@@ -3,27 +3,28 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Sep 13, 2016 12:07:09 PM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="com.training.domains.Donor" table="DONOR">
-        <id name="handPhone" type="long">
-            <column name="HANDPHONE" />
-            <generator class="assigned" />
-        </id>
-        <property name="donorName" type="java.lang.String">
-            <column name="DONORNAME" />
-        </property>
-        <property name="email" type="java.lang.String">
-            <column name="EMAIL" />
-        </property>
-        
-        <component name="address" class="org.training.core.Address"> 
-          <property name="addressLine1" column="ADDRESS_LINE1" /> 
-          <property name="addressLine2" column="ADDRESS_LINE2" /> 
-          <property name="cityName" column="CITYNAME" /> 
-          <property name="pinCode" column="PINCODE" />          
-        </component>
-        
-        <many-to-one name="address" class="com.training.domains.Address" fetch="join">
-            <column name="ADDRESS" />
-        </many-to-one>
-    </class>
+	<class name="com.training.domains.Donor" table="DONOR">
+		<id name="handPhone" type="long">
+			<column name="HANDPHONE" />
+			<generator class="assigned" />
+		</id>
+		<property name="donorName" type="java.lang.String">
+			<column name="DONORNAME" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="EMAIL" />
+		</property>
+
+		<component name="address" class="com.training.domains.Address">
+			<property name="addressLine1" column="ADDRESS_LINE1" />
+			<property name="addressLine2" column="ADDRESS_LINE2" />
+			<property name="cityName" column="CITYNAME" />
+			<property name="pinCode" column="PINCODE" />
+		</component>
+
+		<many-to-one name="address" class="com.training.domains.Address"
+			fetch="join">
+			<column name="ADDRESS" />
+		</many-to-one>
+	</class>
 </hibernate-mapping>

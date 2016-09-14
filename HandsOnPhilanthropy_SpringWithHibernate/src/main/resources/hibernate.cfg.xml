@@ -11,6 +11,9 @@
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
         <property name="show_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
+        <mapping resource="Address.hbm.xml"/>
+        <mapping resource="Donor.hbm.xml"/>
+        <mapping resource="Project.hbm.xml"/>
 
         
     </session-factory>

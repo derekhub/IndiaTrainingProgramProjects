@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:p="http://www.springframework.org/schema/p"
-	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-<context:annotation-config></context:annotation-config>
-<context:component-scan base-package="com.training"></context:component-scan>
-
- 
-<bean id="dataSrc" class="org.springframework.jdbc.datasource.DriverManagerDataSource" 
-p:driverClassName="oracle.jdbc.driver.OracleDriver" p:username="system" p:password="sapjuly16" 
-p:url="jdbc:oracle:thin:@localhost:1521:XE"></bean>
-
-<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate" p:sessionFactory-ref="sessionFactory"></bean>
- 
-
-<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean" p:dataSource-ref="dataSrc">
-  <property name="mappingResources">
-    <list>
-      <value>Donor.hbm.xml</value>
-      <value>Project.hbm.xml</value>
-      <value>Address.hbm.xml</value>      
-    </list>
-  </property>
-  <property name="hibernateProperties">
-    <props>
-      <prop key="hibernate.hbm2ddl.auto">update</prop>
-      <prop key="hibernate.show_sql">true</prop>
-      <prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
-    </props>
-  </property>
-</bean>
+	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="com.training"></context:component-scan>
 
 
+	<bean id="dataSrc"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		p:driverClassName="oracle.jdbc.driver.OracleDriver" p:username="system"
+		p:password="sapjuly16" p:url="jdbc:oracle:thin:@localhost:1521:XE"></bean>
+
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate"
+		p:sessionFactory-ref="sessionFactory"></bean>
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean"
+		p:dataSource-ref="dataSrc">
+		<property name="mappingResources">
+			<list>
+				<value>Donor.hbm.xml</value>
+				<value>Project.hbm.xml</value>
+				<value>Address.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+			</props>
+		</property>
+	</bean>
 
 
 
-<bean id="addressbean1" class="com.training.domains.Address" c:addressLine1="123 yolo street" c:addressLine2="456 teehee street"
- c:cityName="toronto" c:pinCode="12345"></bean>
 
-<bean id="donorBean1" class="com.training.domains.Donor" scope="prototype"> 
-  <property name="handPhone" value="911"/> 
-  <property name="donorName" value="Derek"/> 
-  <property name="email" value="derek@yahoo.ca"/>
-  <property name="address" ref="addressbean1"/>  
-</bean>
 
-<!-- Constructor Dependency with Namespace -->
-<bean id="projectBean1" class="com.training.domains.Project" p:projectId="1" p:projectName="SaveBananas"
- p:projectBudget="1000000" p:amountCollected="0">
-  <property name="donorList">
-    <list value-type="com.training.domains.Donor">
-      <ref bean="donorBean1"></ref>
-    </list>
-  </property>
-</bean>
+	<bean id="addressbean1" class="com.training.domains.Address"
+		c:addressLine1="123 yolo street" c:addressLine2="456 teehee street"
+		c:cityName="toronto" c:pinCode="12345"></bean>
+
+	<bean id="donorBean1" class="com.training.domains.Donor" scope="prototype">
+		<property name="handPhone" value="911" />
+		<property name="donorName" value="Derek" />
+		<property name="email" value="derek@yahoo.ca" />
+		<property name="address" ref="addressbean1" />
+	</bean>
+
+	<!-- Constructor Dependency with Namespace -->
+	<bean id="projectBean1" class="com.training.domains.Project"
+		p:projectId="1" p:projectName="SaveBananas" p:projectBudget="1000000"
+		p:amountCollected="0">
+		<property name="donorList">
+			<list value-type="com.training.domains.Donor">
+				<ref bean="donorBean1"></ref>
+			</list>
+		</property>
+	</bean>
 
 
 
