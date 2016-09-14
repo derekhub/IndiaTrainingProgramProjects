@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2016 1:45:27 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.training.domains.Donor" table="DONOR">
+		<id name="handPhone" type="long">
+			<column name="HANDPHONE" />
+			<generator class="assigned" />
+		</id>
+		<property name="donorName" type="java.lang.String">
+			<column name="DONORNAME" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="EMAIL" />
+		</property>
+
+		<component name="address" class="com.training.domains.Address">
+			<property name="addressLine1" column="DONOR_ADDRESSLINE1"></property>
+			<property name="addressLine2" column="DONOR_ADDRESSLINE2"></property>
+			<property name="cityName" column="DONOR_CITY"></property>
+			<property name="pinCode" column="DONOR_PINCODE"></property>
+		</component>
+
+	</class>
+</hibernate-mapping>
