@@ -13,7 +13,7 @@
 <h2>Philanthropy</h2>
 
 
-<a href="getProjects"> getProjects</a>
+<a href="getProjects"> Get Projects</a>
 
 
 
