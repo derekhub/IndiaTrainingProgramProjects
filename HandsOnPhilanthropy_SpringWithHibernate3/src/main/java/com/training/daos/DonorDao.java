@@ -32,4 +32,16 @@ public class DonorDao {
         return list;
     }
 
+    public Donor findByProject(Serializable key) {
+        String sql = "select * from donor where projectid=?";
+        Donor donor = (Donor) template.get(Donor.class, key);
+        return donor;
+    }
+
+    public List<Donor> findByProject2(Serializable key) {
+        String sql = "from Donor where projectId=" + key;
+        List<Donor> donor = (List<Donor>) template.find(sql);
+        return donor;
+    }
+
 }

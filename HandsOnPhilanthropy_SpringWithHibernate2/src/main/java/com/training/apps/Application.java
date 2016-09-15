@@ -21,7 +21,9 @@ public class Application {
             Project project = ctx.getBean("projectBean1", Project.class);
 
             // TEST KEYS HERE
-            int test = 6;
+            int test = 4;
+
+            // -----------------------------
 
             if (test == 1) {
                 // add
